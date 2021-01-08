@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BDDB774-9994-45CD-A910-8A07B4C7AFA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FastFoodDemo</RootNamespace>
+    <AssemblyName>FastFoodDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FifthUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FifthUserControl.Designer.cs">
+      <DependentUpon>FifthUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirstCustomControl.Designer.cs">
+      <DependentUpon>FirstCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FourthUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FourthUserControl.Designer.cs">
+      <DependentUpon>FourthUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySecondCustmControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MySecondCustmControl.Designer.cs">
+      <DependentUpon>MySecondCustmControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThirdUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThirdUserControl.Designer.cs">
+      <DependentUpon>ThirdUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FifthUserControl.resx">
+      <DependentUpon>FifthUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstCustomControl.resx">
+      <DependentUpon>FirstCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FourthUserControl.resx">
+      <DependentUpon>FourthUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MySecondCustmControl.resx">
+      <DependentUpon>MySecondCustmControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ThirdUserControl.resx">
+      <DependentUpon>ThirdUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fried-chicken-with-french-fries-nuggets-meal_1339-78221.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1150614502-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-169980221-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-538015589-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\side-view-cheesecake-with-cherry-jelly-top-white-plate_141793-2955.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarts-with-strawberries-currant-whipped-cream-decorated-with-mint-leaves_2829-10798.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarts-with-strawberries-currant-whipped-cream-decorated-with-mint-leaves_2829-107981.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\front-view-macarons-with-raspberries-white-surface_141793-17743.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\way-concept-illustration_114360-1191.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fried-chicken-with-french-fries-nuggets-meal_1339-782211.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1150614502-612x6121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-169980221-612x6121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-538015589-170667a1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\side-view-cheesecake-with-cherry-jelly-top-white-plate_141793-29551.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1262756708-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fried-chicken-wings-vegetables_181624-20021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-184884311-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-up-view-delicious-hot-chocolate_23-2148799153.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\front-view-hot-chocolate-concept_23-2148799162.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glasses-with-fresh-ice-tea-table_23-2148555514.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delicious-detox-juice-concept-mock-up_23-2148803130.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greek-salad-with-fresh-vegetables-feta-cheese-kalamata-olives_2829-10848.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salad-chicken-breast-with-zucchini-cherry-tomatoes_2829-8505.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-view-pasta-salad-with-balsamic-vinegar_23-2148700379.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-cabbage-salad-with-carrot-arugula_89198-412.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-521207406-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crispy-fried-chicken-plate-with-salad-carrot_1150-20212.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1217069140-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-155017163-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-new-year-2021-cupcakes-with-golden-candles_114579-20406.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-182026106-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1200196357-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-up-view-easy-homemade-fruit-pancakes_140725-56781.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eclairs-profiteroles-with-black-chocolate-white-chocolate-with-custard-inside-traditional-french-dessert-top-view_114579-8299.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
